@@ -22,31 +22,44 @@ mark {
 }
 
 .float-right {
-    height: 280px;
+    height: 240px;
     margin-left: 48px;
+    margin-bottom: 24px;
 }
 
 .float-right2 {
-    height: 280px;
-    margin: 24px 0 24px 48px;
+    height: 240px;
+    margin: 24px 0 24px 24px;
+    float: right;
+}
+
+.float-right3 {
+    height: 350px;
+    margin: 24px 0;
     float: right;
 }
 
 .float-left {
-    height: 280px;
+    height: 240px;
     margin-right: 48px;
     margin-top: -16px;
 }
 
 .float-left2 {
-    height: 280px;
-    margin: 24px 48px 24 0;
+    height: 240px;
+    margin: 32px 48px 24px 0;
+    float: left;
+}
+
+.float-left3 {
+    height: 240px;
+    margin: 0 48px 0 0;
     float: left;
 }
 
 .background-gray {
     background-color: #F5F5F5;
-    padding: 24px 48px;
+    padding: 24px 16px;
 }
 
 .radius-24 {
@@ -60,7 +73,7 @@ mark {
 
 .orange {
     color: orange !important;
-    font-size: 56px !important;
+    font-size: 2.7245rem !important;
 }
 
 .mg-3 {
@@ -100,27 +113,27 @@ mark {
 /* HEADER */
 
 .header {
-    padding: 56px 0;
+    padding: 56px 0 24px;
 }
 
 .header__title {
     font-weight: 900;
     text-align: center;
-    font-size: 56px;
+    font-size: 2.7245rem;
     line-height: 1;
 }
 
 .header__subtitle {
     font-weight: 600;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     line-height: 1;
 }
 
 .header__text {
     font-weight: 400;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.7337rem;
 }
 
 .header__image img {
@@ -158,17 +171,17 @@ mark {
 .content__title {
     font-weight: 800;
     text-align: center;
-    font-size: 36px;
-    margin: 80px auto;
-    line-height: 1;
+    font-size: 1.9814rem;
+    margin: 32px auto 24px;
+    line-height: 2.5rem;
 }
 
 .content__title-imagem {
     font-weight: 800;
     text-align: center;
-    font-size: 40px;
-    margin: 80px auto 32px;
-    line-height: 1;
+    font-size: 1.9814rem;
+    margin: 32px auto 24px;
+    line-height: 2.5rem;
 }
 
 .content__image {
@@ -179,12 +192,13 @@ mark {
 
 .content__image img {
     display: block;
-    margin: 56px auto 32px;
+    margin: 0 auto 24px;
 }
 
 .content__imagem-title img {
     display: block;
     margin: 0 auto 32px;
+    width: 100%;
 }
 
 .content__image-left {
@@ -197,19 +211,15 @@ mark {
 
 .content__destaque {
     font-weight: 900;
-    font-size: 28px;
+    font-size: 1.3622rem;
     color: #3B4157;
     font-style: italic;
 }
 
-.w-60 {
-    height: 350px !important;
-    box-shadow: 0 0 20px #00000026;
-}
-
 .w-40 {
-    width: 54% !important;
+    width: 50% !important;
     height: auto !important;
+    z-index: 2;
 }
 
 .mg-negativa {
@@ -218,6 +228,7 @@ mark {
 
 .h-new {
     height: 240px;
+    margin: 0 18px 0 0;
 }
 
 .content__button {
@@ -233,6 +244,7 @@ mark {
     border: none;
     color: white;
     transition: .4s ease-in-out;
+    text-transform: uppercase;
 }
 
 .content__button:hover {
@@ -253,14 +265,27 @@ mark {
 }
 
 .selo {
-    height: 250px;
+    height: 200px;
+    margin: 16px 24px 10px 0;
 }
 
 
 /* DEPOIMENTOS */
 
 .depoimento {
-    margin: 48px auto;
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+}
+
+.depoimento-inicial {
+    margin: 24px auto 48px;
+    display: flex;
+    align-items: center;
+}
+
+.depoimento-final {
+    margin: 0 auto 24px;
     display: flex;
     align-items: center;
 }
@@ -281,7 +306,7 @@ mark {
 
 .depoimento__image {
     border-radius: 50%;
-    height: 180px;
+    height: 160px;
     box-shadow: 0 0 20px #00000026;
 }
 
@@ -289,11 +314,12 @@ mark {
     border-radius: 50%;
     height: 240px;
     box-shadow: 0 0 20px #00000026;
+    margin-right: 24px;
 }
 
 .depoimento__name {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.2384rem;
     margin-bottom: 12px;
 }
 
@@ -313,7 +339,7 @@ mark {
     font-weight: 400;
     font-size: 18px;
     margin: 0 48px 0 0;
-    line-height: 3;
+    line-height: 2.5;
 }
 
 .depoimento__date {
@@ -330,10 +356,10 @@ mark {
 }
 
 .depoimento__card {
-    padding: 20px 32px 32px;
+    padding: 0px 20px 20px;
     background-color: #F5F5F5;
     border-radius: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 
@@ -342,7 +368,7 @@ mark {
 .highlight__subtitle {
     font-weight: 500;
     text-align: center;
-    font-size: 32px;
+    font-size: 1.9814rem;
     text-transform: uppercase;
     color: #9f0000;
     margin: 0;
@@ -351,7 +377,7 @@ mark {
 .highlight__title {
     font-weight: 900;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.9814rem;
     margin-bottom: 48px;
 }
 
@@ -589,6 +615,42 @@ mark {
     display: none;
 }
 
+.image-mobile3 {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .float-right {
+        height: 200px;
+    }
+    .float-right2 {
+        height: 200px;
+    }
+    .float-right3 {
+        height: 260px;
+        margin: 24px 0 0 12px;
+    }
+    .float-left {
+        height: 200px;
+    }
+    .float-left2 {
+        height: 200px;
+    }
+    .float-left3 {
+        height: 200px;
+    }
+    .h-new {
+        height: 200px;
+        margin: 16px 18px 10px 0;
+    }
+    .br-desk {
+        display: none;
+    }
+    .br-mobile {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     #faq .accordion button .accordion-title {
         padding-left: 25px;
@@ -614,60 +676,48 @@ mark {
 }
 
 @media (max-width: 992px) {
-    .content__image-title img {
+    .content__imagem-title img {
         width: 100%;
     }
 }
 
 @media (max-width: 767px) {
-    .container {
-        max-width: 630px;
+    .image-mobile {
+        display: block;
+        margin: auto;
+        margin-bottom: 24px;
     }
-    .header__title {
-        font-size: 48px;
+    .image-mobile2 {
+        display: block;
+        margin: auto;
+        margin-bottom: 24px;
     }
-    .header__subtitle {
-        font-size: 31px;
+    .image-mobile3 {
+        display: block;
+        margin: auto;
+        margin: 24px auto;
     }
-    .header__text {
-        font-size: 18px;
-    }
-    .content__text {
-        font-size: 18px;
-    }
-    .content__subtitle {
-        font-size: 18px;
-    }
-    .content__title {
-        font-size: 28px;
-    }
-    .content__image {
+    .image-mobile img {
+        margin: auto;
+        display: block;
         width: 100%;
     }
-    .content__image img {
-        margin: 0 auto 18px;
+    .image-mobile2 img {
+        margin: auto;
+        display: block;
+        width: 40% !important;
+    }
+    .image-mobile3 img {
+        margin: auto;
+        display: block;
         width: 100%;
     }
-    .header__image img {
-        width: 100%;
+    .frasco {
+        width: 40% !important;
     }
-    .highlight__subtitle {
-        font-size: 24px;
-    }
-    .highlight__title {
-        font-size: 32px;
-    }
-    .content__title-image {
-        font-size: 28;
-    }
-    .content__destaque {
-        font-size: 24px;
-    }
-    .float-right {
-        display: none;
-    }
-    .float-right2 {
-        display: none;
+    .depoimento-mobile {
+        height: 250px;
+        width: auto !important;
     }
     .float-left {
         display: none;
@@ -675,145 +725,51 @@ mark {
     .float-left2 {
         display: none;
     }
-    .image-mobile {
-        display: block;
-        margin-bottom: 32px;
+    .float-left3 {
+        display: none;
     }
-    .image-mobile img {
-        height: 280px;
-        margin: auto;
+    .float-right {
+        display: none;
+    }
+    .float-right2 {
+        display: none;
+    }
+    .float-right3 {
+        display: none;
+    }
+    .depoimento__image-destaque {
+        display: none;
+    }
+    .depoimento__content-destaque {
         display: block;
     }
-    .image-mobile2 {
-        display: block;
-        margin: 32px 0;
-    }
-    .image-mobile2 img {
-        height: 280px;
-        margin: auto;
-        display: block;
-    }
-    .mg-3 {
-        margin: 0 !important;
+    .depoimento__text-destaque {
+        margin: 0;
     }
     .depoimento__box {
         display: block;
-        padding: 0;
-    }
-    .background-gray {
-        padding: 40px;
-    }
-    .depoimento__image {
-        margin: 0 auto 32px;
-    }
-    .depoimento__name-destaque {
-        font-size: 18px;
-    }
-    .depoimento__content-destaque {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-    .depoimento__image-destaque {
-        height: 170px;
     }
     .depoimento__content {
         margin: 0;
     }
-    .mg-negativa {
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-    .w-40 {
-        width: 100% !important;
-    }
-    .br-desk {
-        display: none;
-    }
-    .br-mobile {
+    .depoimento__image {
+        margin: auto;
         display: block;
+        margin-bottom: 12px;
+    }
+    .w-60 {
+        width: 100%;
+    }
+    .content__title {
+        font-size: 1.8rem;
+        line-height: 2.0rem;
     }
     .orange {
-        font-size: 48px !important;
+        font-size: 2.0rem !important;
     }
-    .content__image-title img {
+    .content__image img {
         width: 100%;
     }
 }
 
-@media (max-width: 425px) {
-    .content {
-        padding: 0 24px;
-    }
-    .flex-image img {
-        height: auto;
-        width: 100%;
-    }
-    .mobile-none {
-        display: none !important;
-    }
-    .background-gray {
-        padding: 32px;
-    }
-    .flex img {
-        height: auto;
-        width: 100%;
-    }
-    .header__title {
-        font-size: 40px;
-    }
-    .header__subtitle {
-        font-size: 24px;
-    }
-    .header__text {
-        font-size: 20px;
-        line-height: 1;
-    }
-    .content__text {
-        font-size: 18px;
-    }
-    .content__title {
-        font-size: 28px;
-    }
-    .content__title-imagem {
-        font-size: 28px;
-    }
-    .content__imagem-title img {
-        width: 100%;
-    }
-    .highlight__subtitle {
-        font-size: 26px;
-    }
-    .highlight__title {
-        font-size: 28px;
-    }
-    .footer__police {
-        text-align: center;
-    }
-    .image-mobile {
-        display: block;
-        margin-bottom: 32px;
-    }
-    .image-mobile img {
-        width: 100%;
-        height: auto;
-    }
-    .image-mobile2 {
-        display: block;
-        margin: 32px 0;
-    }
-    .image-mobile2 img {
-        width: 100%;
-        height: auto;
-    }
-    .depoimento__text-destaque {
-        margin: 0;
-        line-height: 2.5;
-    }
-    .orange {
-        font-size: 36px !important;
-    }
-}
+@media (max-width: 425px) {}
